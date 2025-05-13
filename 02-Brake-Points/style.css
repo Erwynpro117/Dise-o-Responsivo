@@ -1,0 +1,62 @@
+/* 
+
+Break points (Puntos de quiebre)
+
+Valores especificos del ancho de pantalla donde camia el diseño del sitio web para ada´tarse mejor a las dimensiones del dispositivo.
+
+Ayuda a definir los estilos mediante los media queries.
+Tradicionalmente los break points se definen segun categorias comunes de los dispositivos.
+
+Basandonos en los dispositivos::after 
+
+- Moviles pequeños: de 320px a 479px
+- Moviles: de 480px a 767
+- Tablets: de 1024px a 1279px ancho panatalla.
+- Pantallas Grandes: 1280px y superiores ancho pantalla
+
+Es recomendable usar solo los break points necesarios, generalmente 
+
+Metodologias de Deseño responivo: 
+
+1. Mobile First (Primero moviles)
+
+Primero establecemos los estilos para moviles como base se usan los media queries con "min-width" para ir ampliando funcionalidades.
+
+2. Desktop first (Primero escritorio)
+
+Primero establecemos los estilos para scritorio o pantallas grandes y se usan los media queries con "max-width" y vamos reduciendo el tamaño pantalla para ajustar las funcionalidades.
+
+*/
+
+/* Mobile first */
+
+
+body {
+    background-color: crimson;
+}
+
+@media screen and (min-width: 480px) {
+body {
+    background-color: darkgoldenrod;
+}
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1 {
+        font-size: 8rem;
+        color: cyan;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    h1 {
+        font-size: 8rem;
+        color: cyan;
+    }
+}
